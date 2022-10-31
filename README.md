@@ -54,14 +54,14 @@ The AutoML configuration is passed as a step of pipeline that is submitted as an
 ## Authentication
 In this step, a Service Principal is created and granted access to resources in the current workspace. 
 ### Service Principal
-![Authentication](screenshots/architecture.png)
+![Authentication](screenshots/architecture.PNG)
 ### Workspace Share
-![Workspace Share](screenshots/workspace_share.png)
+![Workspace Share](screenshots/workspace_share.PNG)
 
 ## AutoML Experiment
 With authentication completed, in this step, we create and register a dataset with the workspace. Registering a dataset ensures that it persists and is accessible to all users across a workspace. It also allows versioning. A compute cluster is also created as target for the AutoML classification experiment. 
 ### Registered Datasets
-![Registered Dataset](screenshots/Datasets.png)
+![Registered Dataset](screenshots/Datasets.PNG)
 ### Completed Experiment
 ![Completed Experiment](screenshots/experiment_completed.png)
 ### Best Model
@@ -73,10 +73,10 @@ Azure AutoML tries and reports performance of a handful of models before outputt
 ## Enable Logging
 The health of the deployed model is critical and logs allow us to monitor health.In this step, we enable Application Insights by retrieving the deployed Webservice object and updating its configurations. Subsequently, the logs can then be viewed by running [logs.py](starter_files\logs.py). 
 ### Application Insights Enabled
-![Application Insights](screenshots/app_insight.png)
+![Application Insights](screenshots/app_insight.PNG)
 ### Logging Enabled
-![Logs](screenshots/logs.png)
-![Logs](screenshots/logs(cont'd).png)
+![Logs](screenshots/logs.PNG)
+![Logs](screenshots/logs(cont'd).PNG)
 
 ## Swagger Documentation
 Testing the deployed model allows us to monitor both performance and behavior. The Swager UI allows us to achieve this. Azure provides a JSON files with description of the expected behavior of the deployed model. When run in a docker container, the Swagger UI allows examination of thie JSON file as well as interaction with the model endpoint. 
@@ -87,25 +87,25 @@ Testing the deployed model allows us to monitor both performance and behavior. T
 ## Consume Model Endpoints
 The model can also be interacted with python scripts and this step achieves that. Azure provides a scoring uri to allow access to the model as well as a key to ensure security. These are necessary in order to interact with the model using Python scripts locally. Further, the robustness of the deployed model's performance is investigated using the Apache Benchmark. 
 ### Endpoint Result
-![Endpoint](screenshots/endpoint.png)
+![Endpoint](screenshots/endpoint.PNG)
 ### Apache Benchmark
-![Apache Benchmark](screenshots/benchmark.png)
-[Apache Benchmark](screenshots/benchmark(benchmark(cont'd).PNG).png)
+![Apache Benchmark](screenshots/benchmark.PNG)
+[Apache Benchmark](screenshots/benchmark(benchmark(cont'd).PNG)
 
 ## Create and Publish a Pipeline
 The created pipeline is published in this section to ensure that it can be rerun using HTTTP Requests. This feature becomes important and incredibly convenient as newer versions of the BankMarketing dataset are registered in the workspace. 
 ### Create Pipeline
-![Pipeline](screenshots/pipeline.png)
+![Pipeline](screenshots/pipeline.PNG)
 ### Bankmarketing dataset with AutoML Module
-![Bankmarketing](screenshots/bankmarketing.png)
+![Bankmarketing](screenshots/bankmarketing.PNG)
 ### Published Pipeline overview
-![Published Pipeline](screenshots/pipeline2.png)
+![Published Pipeline](screenshots/pipeline2.PNG)
 ### Use RunDetailsWidget
-![RunDetails Widget](screenshots/run_details_completed.png)
+![RunDetails Widget](screenshots/run_details_completed.PNG)
 ### Pipeline Endpoint
-![Pipeline Endpoint](screenshots/pipeline-endpoint.png)
+![Pipeline Endpoint](screenshots/pipeline-endpoint.PNG)
 ###  Scheduled run in ML Studio
-![Scheduled run](screenshots/scheduled_run.png)
+![Scheduled run](screenshots/scheduled_run.PNG)
 
 # Future Improvements
 Azure AutoML is very powerful amd we can deduce that from this experiment, with very few steps within the pipeline, we were able to a model with an incerdible performance. Improvements on this can be including more steps within the steps which would most likely better the model performance. Machine Learning operation includes several steps like, data cleaning, preprocessing, feature engineering and model building. Advancing this experiment to a full-blown ML pipeline would increase the model performance and explainability.
