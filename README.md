@@ -38,7 +38,7 @@
 # Overview
 In this project, we perform a classification task on the Bank Marketing dataset using AzureML's AutoML and Pipeline. The dataset contains the information of a bank's prospective customers to whom direct marketing calls have been made. It contains such information as: age, marital status, job, duration of call etc. and we seek to predict if the customer will subscribe to a term deposit. In the dataset, this target is coded as the y variable with values: yes and no. Further details about this data is available [here](https://archive.ics.uci.edu/ml/datasets/Bank+Marketing). This project is tagged `Operationalizing Machine Learning`
 - ## Labradorite
-      This repository is named `Labradorite` out of the blues, it is just based on my love for gemstones. Labradorite is a gemstone and you might want to read more about it [here](https://en.wikipedia.org/wiki/Labradorite) 
+    This repository is named `Labradorite` out of the blues, it is just based on my love for gemstones. Labradorite is a gemstone and you might want to read more about it [here](https://en.wikipedia.org/wiki/Labradorite) 
 
 # Architecture
 ![Architecture](archi.png)
